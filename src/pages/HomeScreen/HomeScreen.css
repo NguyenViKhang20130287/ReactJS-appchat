@@ -1,0 +1,203 @@
+:root {
+    --primary-color: #0068FF
+}
+
+body {
+    background-image: url("/src/assets/bg.jpg");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.center {
+    background: #F5F6FA;
+    border-radius: 8px;
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 10px;
+}
+
+.info-owner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /*padding: 10px;*/
+}
+
+.avatar-owner, .avatar-user {
+    height: 40px;
+    width: 40px;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.avatar-user {
+    width: 45px;
+    height: 45px;
+}
+
+.info-owner img, .avatar-user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-owner {
+
+}
+
+.displayName {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.email {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.wrapper {
+    margin-left: 10px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.search-wrapper {
+    border-radius: 50px;
+    background: #F5F6FA;
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+}
+
+.search-wrapper input {
+    border: none;
+    outline: none;
+    background: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.search-wrapper input::placeholder {
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #95a5a6;
+}
+
+.chat-box {
+    width: 70%;
+    padding: 10px;
+}
+
+.chat-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 10px;
+}
+
+.navbar-info {
+    display: flex;
+    align-items: center;
+}
+
+.more {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.more-icon {
+    font-size: 24px;
+}
+
+.chat-content {
+    height: 80%;
+    overflow: scroll;
+}
+
+.chat-content::-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+    background-color: #f1f1f1;
+}
+
+/* Tùy chỉnh đường biên của thanh cuộn */
+.chat-content::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    height: 5px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+/* Khi hover lên thanh cuộn */
+.chat-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Tùy chỉnh phần track của thanh cuộn (phần nằm bên trong thanh cuộn) */
+.chat-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.type-message {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.type-message input {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.send-btn {
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .3s;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.send-btn:hover {
+    background: #fff;
+    color: var(--primary-color);
+}
+

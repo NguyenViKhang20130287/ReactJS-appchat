@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #0068FF
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.user-wrapper:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.avatar-wrapper {
+    height: 40px;
+    width: 40px;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-displayName {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info-lastMessage {
+    font-size: 14px;
+    color: #95a5a6;
+}
